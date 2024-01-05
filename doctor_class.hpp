@@ -1,10 +1,11 @@
+/* A header file for Doctor subclass*/
 #pragma once
 
 #include <iostream>
 #include <vector>
 #include <algorithm>
 #include <fstream>
-#include "person_class.hpp"
+#include "person_class.hpp"         //including header file of a parent class Person
 
 class Doctor: public Person {
     private:
@@ -20,7 +21,7 @@ class Doctor: public Person {
         void SetJob();
         std::string GetJob();
         void SaveObjectToJson(std::vector<float> rating);
-        void LogInDoctor();
+        void LogIn() override;                                  //overriding a method from Person class
         void ShowAllDoctors();
         void SortDoctorsByRating();
         float GetRating(std::vector<float> rating);

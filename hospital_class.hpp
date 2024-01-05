@@ -1,3 +1,4 @@
+/* A header file for Hospital class */
 #pragma once
 #include <iostream>
 #include <vector>

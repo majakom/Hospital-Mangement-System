@@ -1,10 +1,11 @@
+/* Header file for subclass Patient*/
 #pragma once
 #include <iostream>
 #include <vector>
 #include <algorithm>
 #include <fstream>
-#include "person_class.hpp"
-#include "doctor_class.hpp"
+#include "person_class.hpp"                 //including header file of class Person
+#include "doctor_class.hpp"                 //including header file of subclass Doctor
 
 class Patient: public Person {
     private:
@@ -18,6 +19,6 @@ class Patient: public Person {
         void ManageDoctor();
         void RegisterPatient();
         void SaveObjectToJson();
-        void LogInPatient();
+        void LogIn() override;              //overriding method from class Person
         void BookBeds();
 };

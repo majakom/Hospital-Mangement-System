@@ -1,3 +1,4 @@
+/* A header file for a Beds class */
 #pragma once
 #include <iostream>
 #include <fstream>

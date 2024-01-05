@@ -1,3 +1,4 @@
+/* A header file for class Person*/
 #pragma once
 
 #include <iostream>
@@ -18,7 +19,7 @@ class Person{
     public:
         Person();
         ~Person();
-        void SetId(int id);
+        void SetId(int id);                                     //setters:
         void SetLogin();
         void SetName();
         void SetSurname();
@@ -33,7 +34,7 @@ class Person{
         void SetJustPhoneNumber(int phoneNumber);
         void SetJustLogin(std::string login);
         void SetJustPassword(std::string password);
-        std::string GetName();
+        std::string GetName();                                  //getters:
         std::string GetSurname();
         std::string GetLogin();
         std::string GetPassword();
@@ -41,6 +42,6 @@ class Person{
         std::string GetEmail();
         int GetId();
         int GetPhoneNumber();
-        
+        virtual void LogIn() {};        //virtual void method to be overrided by method from subclasses
 
 };
